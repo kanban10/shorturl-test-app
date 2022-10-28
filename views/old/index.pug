@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  .container
+    h2 Short url and QRcode Generator
+      form(action='/shorturl/', method='post')
+        .form-group
+          input(type='text',name='domain',class= 'from-control',placeholder='Put your url here!')
+        .form-group
+          button(type='submit') Generate Short Url and QRcode
+  if short 
+    h2 Short Url: http://localhost:3000/#{short}
+    br
+    img(src='../public/images/#{short}.png')
+
+

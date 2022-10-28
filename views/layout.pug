@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet' href='/stylesheets/style.css')
+    script(src="https://cdn.tailwindcss.com") 
+  body
+    //- full use
+    div(class="header")
+      block header
+
+    //- short use
+    .content
+      block content
+
+    .footer
+      block footer
