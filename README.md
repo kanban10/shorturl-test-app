@@ -16,7 +16,7 @@ needed installations:
     └── qrcode@1.5.1
  MongoDB https://www.mongodb.com/try/download/community 
  
- need to setting path C:\Program Files\MongoDB\Server\6.0\bin and create database name url_history
+ need to setting path C:\Program Files\MongoDB\Server\6.0\bin and create database named url_history and collection named urls 
 
 Run Server
   
