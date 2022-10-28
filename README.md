@@ -14,6 +14,8 @@ needed installations:
     ├── morgan@1.9.1
     ├── pug@3.0.2
     └── qrcode@1.5.1
- MongoDB https://www.mongodb.com/try/download/community
- 
+ MongoDB https://www.mongodb.com/try/download/community 
+  need to setting path C:\Program Files\MongoDB\Server\6.0\bin and create database name url_history
+Run Server
+  run command npm start on terminal
  
