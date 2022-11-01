@@ -14,7 +14,7 @@ var app = express();
 
 // mongoDB connect
 
-mongoose.connect('mongodb://127.0.0.1/url_history');
+mongoose.connect('mongodb+srv://Sakpisit:192837@cluster0.6bbsnfu.mongodb.net/?retryWrites=true&w=majority');
 mongoose.Promise = global.Promise;
 
 // view engine setup
