@@ -15,7 +15,7 @@ var app = express();
 // mongoDB connect
 
 
-mongoose.connect('mongodb+srv://Sakpisit:192837@cluster0.url_history.mongodb.net/?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://Ohm:faFy8ApPHTYArTdV@cluster0.6bbsnfu.mongodb.net/?retryWrites=true&w=majority');
 mongoose.Promise = global.Promise;
 
 
