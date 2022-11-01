@@ -92,7 +92,7 @@ router.post("/", function (req, res) {
     doc.save();
 
     // return the data
-    res.render("form", { title: "Generate URL", data: doc, host: "http://localhost:3000" });
+    res.render("form", { title: "Generate URL", data: doc, host: "https://shrqrcoder.herokuapp.com" });
   } catch (err) {
     return res.status(500).json({
       status: 500,
