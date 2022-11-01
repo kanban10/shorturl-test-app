@@ -14,8 +14,16 @@ var app = express();
 
 // mongoDB connect
 
-mongoose.connect('mongodb+srv://Sakpisit:192837@cluster0.6bbsnfu.mongodb.net/?retryWrites=true&w=majority/url_history');
-mongoose.Promise = global.Promise;
+
+const { MongoClient, ServerApiVersion } = require('mongodb');
+const uri = "mongodb+srv://Sakpisit:192837@cluster0.6bbsnfu.mongodb.net/?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
+client.connect(err => {
+  const collection = client.db("test").collection("devices");
+  // perform actions on the collection object
+  client.close();
+});
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
