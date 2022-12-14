@@ -1,7 +1,7 @@
 extends layout
 
 block content
-    .fb-customerchat(page_id='<PAGE_ID>' logged_in_greeting='สอบถามเพิ่มเติม ?' logged_out_greeting='สอบถามเพิ่มเติม')
+    .fb-customerchat(page_id='100088460780714' logged_in_greeting='สอบถามเพิ่มเติม ?' logged_out_greeting='สอบถามเพิ่มเติม')
     .flex.justify-center.items-center.h-full.flex-col
         .w-full.max-w-lg.m-auto
             form(action='/' method='post').bg-white.shadow-md.rounded.px-8.pt-6.pb-8.mb-4.w-full
@@ -31,7 +31,7 @@ block content
                     script.
                        window.fbAsyncInit = function () {
                        FB.init({
-                       appId: 100088460780714,
+                       appId: '100088460780714',
                        autoLogAppEvents: true,
                        xfbml: true,
                        version: 'v7.0'
