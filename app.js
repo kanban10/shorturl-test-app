@@ -41,7 +41,7 @@ app.use(function(req, res) {
 });
 
 const corsOptions ={
-  origin:'https://shrqrcoder.herokuapp.com/', 
+  origin:'http://localhost:3000', 
   credentials:true,            //access-control-allow-credentials:true
   optionSuccessStatus:200
 }
