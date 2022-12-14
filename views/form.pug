@@ -25,11 +25,8 @@ block content
                     strong QR Code
                         #qrcode
                         
-    .fb-customerchat(attribution='setup_tool' page_id='244940405931282' theme_color='#009bc9')
-    #fb-root
-    
-                    script(src='/javascripts/jquery.min.js')
-                    script(src='/javascripts/qrcode.min.js')
+      .fb-customerchat(attribution='setup_tool' page_id='244940405931282' theme_color='#009bc9')
+      #fb-root
                     script.
                       window.fbAsyncInit = function () {
                       FB.init({
@@ -45,10 +42,19 @@ block content
                       js.src = 'https://connect.facebook.net/th_TH/sdk/xfbml.customerchat.js';
                       fjs.parentNode.insertBefore(js, fjs);
                       }(document, 'script', 'facebook-jssdk'));
-                      var short_url="#{data.short_url}";
-                      //- console.log(url)
-                      const url = window.location.origin
-                      var qrcode = new QRCode("qrcode", {
+
+
+
+                    script(src='/javascripts/jquery.min.js')
+                    script(src='/javascripts/qrcode.min.js')
+                    script.
+  
+                        short_url="#{data.short_url}";
+                        //- console.log(url)
+
+                        const url = window.location.origin
+
+                        var qrcode = new QRCode("qrcode", {
                             text: url + "/" + short_url, // `${url}/urls/${short_url}`
                             width: 128,
                             height: 128,
