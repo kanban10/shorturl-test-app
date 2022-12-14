@@ -15,16 +15,20 @@ html
 
     .footer
       block footer
+  // Messenger ปลั๊กอินแชท Code
   #fb-root
+  // Your ปลั๊กอินแชท code
   #fb-customer-chat.fb-customerchat
   script.
     var chatbox = document.getElementById('fb-customer-chat');
     chatbox.setAttribute("page_id", "244940405931282");
     chatbox.setAttribute("attribution", "biz_inbox");
+  // Your SDK code
+  script.
     window.fbAsyncInit = function() {
     FB.init({
     xfbml            : true,
-    version          : 'v12.0'
+    version          : 'v15.0'
     });
     };
     (function(d, s, id) {
@@ -34,6 +38,7 @@ html
     js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
     fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
+
 
 
 
